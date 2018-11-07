@@ -23,11 +23,11 @@ body{
 hl,
 h2,
 h3,
-p{
+p {
     margin-bottom: 20px;
 }
 
-pilest-child {
+p:last-child {
     margin-bottom: 0;
 }
 
@@ -35,14 +35,14 @@ hl,
 h2,
 h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 760;
+    font-weight: 700;
     color: orangered
 }
 
 hl {
     padding-bottom: 20px;
     font-size: 30px;
-    line-height: 40px;
+    line-height: 49px;
     border-bottom: 3px solid blue; 
 }
 
@@ -57,9 +57,9 @@ h3 {
     width: 100%;
     margin: 0 0 30px;
     overflow: auto;
-    color: black;
-    background: sandybrown;
-    border-bottom: 3px solid black;
+    color: white;
+    background: lightseagreen;
+    border-bottom: 2px solid black;
 }
 
 .container a{
@@ -79,9 +79,9 @@ nav a{
     padding-left: 15px;
     margin-left: 15px;
     line-height: 18px;
-    color: black;
+    color: white;
     text-decoration: none;
-    border-left: 1px solid red;
+    border-left: 1px solid black;
 }
 
 nav a first-child{
@@ -99,7 +99,7 @@ nav a first-child{
     padding: 30px;
     margin: 0 0 40px;
     background: #fff;
-    border: 2px solid white;
+    border: 2px solid lightseagreen;
 }
 
 /*sidebar*/
@@ -139,12 +139,18 @@ h3, .sidebar h2{
     margin-right: 40px;
 
 }
-.work img: {
+.work img {
     width: 100%;
     border: 0 none;
     opacity: 0.8;
 }
 
+}
+.work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+}
 .work h3 {
     position: absolute;
     bottom: 20px;
@@ -155,7 +161,7 @@ h3, .sidebar h2{
     line-height: 30px;
     color: black;
     text-align: center;
-    background: black;
+    background: salmon;
     border-bottom: 0;
 }
 .auth-image {
@@ -170,7 +176,7 @@ footer{
     padding: 30px 0;
     clear: both;
     font-size: 12px;
-    color: black;
+    color:white;
     text-align: center;
     background: lightgreen;
     border-top: 8px solid black;
@@ -195,21 +201,47 @@ footer{
     margin-right: 5px;
     
 }
-/* portfolio page */
-.work {
-    position: relative;
-    float: left;
-    width: 274px;
-    margin: 20px 0 25px;
-    overflow: auto;
-}
 
 /* contact page */
+#contact-form ul {
+ margin-bottom: 20px;
+}
+#contact-form li {
+margin-bottom: 10px;
+}
+label,
+input[type=text]  
+input[type=email]
+textarea {
+    display: block;
+    width: 100px;
+}
+input[type=text],
+input[type=email],
+textarea{
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid indigo;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    padding: 10px 30px;
+    font-size: 18px;
+    color: tomato;
+    cursor: pointer;
+    background: chartreuse;
+    border: 0 none;
+}
 
 
 /*footer*/
 footer {
-    padding:30px;
+    padding:30px 0;
     clear: both;
     font-size: 12px;
     color:pink;
